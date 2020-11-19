@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(43, 43, 78);
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: rgb(203, 212, 219);
+}
+nav {
+  align-items: center;
+  width: 99%;
+  border: 5px solid #000;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 60px;
+}
+.nav-links a {
+  color: rgb(211, 209, 209);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.nav-links li:hover {
+  background-color: #555;
+}
+.wrapper {
+  display: grid;
+  background-color: rgb(103, 58, 63);
+  grid-template-columns: 1fr 700px 1fr;
+  height: 440px;
+  margin-top: 100px;
+  border: 5px solid #000;
+}
+.nada {
+  background-color: rgb(43, 43, 78);
+  width: 100%;
+  height: 100%;
+}
+.item {
+  display: flex;
+  justify-content: center;
+}
