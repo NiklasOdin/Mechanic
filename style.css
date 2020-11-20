@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(43, 43, 78);
+  background-color: rgb(76, 76, 150);
   font-family: "Poppins", sans-serif;
 }
 
@@ -14,6 +14,7 @@ nav {
   align-items: center;
   width: 99%;
   border: 5px solid #000;
+  background: rgb(143, 58, 63);
 }
 .nav-links {
   display: flex;
@@ -26,24 +27,170 @@ nav {
   text-decoration: none;
   letter-spacing: 2px;
 }
+.nav-links li {
+  padding: 7px 7px;
+}
 
 .nav-links li:hover {
-  background-color: #555;
+  background-color: rgb(38, 14, 77);
 }
 .wrapper {
   display: grid;
-  background-color: rgb(103, 58, 63);
-  grid-template-columns: 1fr 700px 1fr;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
   height: 440px;
   margin-top: 100px;
+}
+
+.item {
+  background-color: rgb(103, 58, 63);
+  display: inline-grid;
+  place-items: center;
+  margin: 0;
   border: 5px solid #000;
 }
-.nada {
-  background-color: rgb(43, 43, 78);
-  width: 100%;
-  height: 100%;
+.item2 {
+  background-color: rgb(130, 30, 35);
+  display: inline-grid;
+  place-items: center;
+  margin: 0;
+  border: 5px solid #000;
 }
-.item {
-  display: flex;
-  justify-content: center;
+.item3 {
+  background-color: rgb(145, 58, 63);
+  display: inline-grid;
+  place-items: center;
+  margin: 0;
+  border: 5px solid #000;
+}
+
+.kb1 {
+  max-width: 600px;
+  max-height: 350px;
+}
+
+.kb2 {
+  max-width: 210px;
+  max-height: 300px;
+  border: 5px solid #000;
+}
+
+.kb3 {
+  max-width: 210px;
+  max-height: 300px;
+  border: 5px solid #000;
+}
+
+.img {
+  max-width: 100%;
+}
+@media only screen and (max-width: 980px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container {
+  display: grid;
+  height: 1000px;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.3fr 1.2fr 1.2fr;
+  grid-gap: 20px;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  grid-template-areas:
+    "nav2 nav2 nav2 nav2"
+    "sidebar mainC mainC mainC2"
+    "sidebar content1 content2 content3"
+    "sidebar content4 content5 content6";
+}
+
+.nav2 {
+  background-color: rgb(103, 58, 63);
+  grid-area: nav2;
+  border: 5px solid #000;
+}
+
+.mainC2 {
+  background-color: rgb(123, 58, 63);
+  grid-area: mainC2;
+  border: 5px solid #000;
+  display: inline-grid;
+  place-items: center;
+  margin: 0;
+}
+
+.mainC {
+  background-color: rgb(107, 58, 63);
+  grid-area: mainC;
+  border: 5px solid #000;
+  display: inline-grid;
+  place-items: center;
+  margin: 0;
+}
+
+.sidebar {
+  background-color: rgb(133, 58, 63);
+  grid-area: sidebar;
+  border: 5px solid #000;
+}
+
+.content1 {
+  background-color: rgb(123, 58, 63);
+  grid-area: content1;
+  border: 5px solid #000;
+  display: inline-grid;
+  place-items: center;
+  margin: 0;
+}
+
+.content2 {
+  background-color: rgb(133, 58, 63);
+  grid-area: content2;
+  border: 5px solid #000;
+  display: inline-grid;
+  place-items: center;
+  margin: 0;
+}
+
+.content3 {
+  background-color: rgb(143, 58, 63);
+  grid-area: content3;
+  border: 5px solid #000;
+  display: inline-grid;
+  place-items: center;
+  margin: 0;
+}
+
+.content4 {
+  background-color: rgb(153, 58, 63);
+  grid-area: content4;
+  border: 5px solid #000;
+  display: inline-grid;
+  place-items: center;
+  margin: 0;
+}
+
+.content5 {
+  background-color: rgb(163, 58, 63);
+  grid-area: content5;
+  border: 5px solid #000;
+  display: inline-grid;
+  place-items: center;
+  margin: 0;
+}
+
+.content6 {
+  background-color: rgb(173, 58, 63);
+  grid-area: content6;
+  border: 5px solid #000;
+  display: inline-grid;
+  place-items: center;
+  margin: 0;
+}
+.price {
+  color: rgb(238, 255, 2);
+  text-decoration: underline;
 }
