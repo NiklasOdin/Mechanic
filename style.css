@@ -71,23 +71,24 @@ nav {
 .kb1 {
   max-width: 600px;
   max-height: 350px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .kb2 {
   max-width: 210px;
   max-height: 300px;
   border: 5px solid #000;
+  max-width: 100%;
 }
 
 .kb3 {
   max-width: 210px;
   max-height: 300px;
   border: 5px solid #000;
-}
-
-.img {
   max-width: 100%;
 }
+
 @media (max-width: 980px) {
   .wrapper {
     grid-template-columns: 1fr 1fr;
@@ -222,7 +223,7 @@ nav {
   background-color: rgb(38, 14, 77);
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 930px) {
   .container {
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
@@ -235,4 +236,46 @@ nav {
       "content4 content5"
       "content6 sidebar";
   }
+}
+
+.muc {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "contact1"
+    "contact2"
+    "contact3"
+    "contact4";
+}
+
+.contact1 {
+  grid-area: contact1;
+  background-color: rgb(163, 58, 63);
+  border: 5px solid #000;
+}
+
+.contact2 {
+  grid-area: contact2;
+  background-color: rgb(153, 58, 63);
+  border: 5px solid #000;
+}
+
+.contact3 {
+  grid-area: contact3;
+  background-color: rgb(173, 58, 63);
+  border: 5px solid #000;
+}
+
+.contact4 {
+  grid-area: contact4;
+  background-color: rgb(183, 58, 63);
+  border: 5px solid #000;
+}
+
+.info {
+  color: rgb(207, 204, 204);
+  margin-left: 30px;
 }
