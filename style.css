@@ -38,6 +38,7 @@ nav {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
+
   height: 440px;
   margin-top: 50px;
   grid-template-areas: "item3 item item2";
@@ -66,6 +67,13 @@ nav {
   margin: 0;
   border: 5px solid #000;
   grid-area: item3;
+}
+
+.footer {
+  text-align: center;
+  color: rgb(224, 220, 220);
+  font-size: 15px;
+  margin-top: 30px;
 }
 
 .kb1 {
@@ -117,7 +125,7 @@ nav {
 }
 
 .nav2 {
-  background-color: rgb(103, 58, 63);
+  background-color: rgb(140, 58, 63);
   grid-area: nav2;
   border: 5px solid #000;
 }
@@ -243,8 +251,9 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
+    "nav2"
     "contact1"
     "contact2"
     "contact3"
